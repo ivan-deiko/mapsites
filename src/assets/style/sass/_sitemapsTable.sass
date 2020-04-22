@@ -1,0 +1,148 @@
+// start styles for tr with sitemaps
+.sitemaps-tbody
+  @include medium-font
+  color: $base-color
+
+  .sitemap-row_selected
+    background: #E7F6FF
+
+  .sitemap_row__height
+    height: 64px
+
+  .sitemap-row
+    border-bottom: 1px solid #F2F4FB
+    
+    &_checkbox
+      padding: 0 16px 0 26px
+
+    &_path
+      padding-right: 33.26px
+
+      a 
+        display: flex
+        align-items: center
+        color: $blue-color
+        text-decoration: none
+
+        span  
+          margin-right: 7.25px
+
+    &_index
+      width: 57px
+      text-align: center
+      padding-right: 39px
+    
+    &_date
+      p 
+        width: 56px
+        text-align: center
+
+    &_date__pt
+      padding: 0 50px 0 45px
+
+    &_status
+      padding-right: 36px
+
+      .status_success
+        color: $green-color
+      
+      .status_error
+        color: $orange-color
+
+    &_urls
+      padding-right: 50px
+      text-align: center
+
+    &_recrewl
+      padding-right: 68px
+
+      button
+        @include small-font
+        color: $blue-color
+        display: flex
+        width: 72px
+        height: 25px
+        align-items: center
+        justify-content: center
+        outline: none
+        border: 1px solid $blue-color
+        border-radius: 4px
+        background: none
+        cursor: pointer
+
+      button:hover
+        background: #D2EFFF
+    
+    &_remove  
+      div
+        position: relative
+        cursor: pointer
+        display: inline-block
+        margin-left: 20px
+
+        .remove:hover
+          path 
+            fill: $orange-color
+
+      div:hover:before
+        // styles for remove tooltip 
+        @include medium-font
+        color: #FAFAFA
+        content: 'Remove from Search Console'
+        position: absolute
+        padding: 8px 9px 8px 10px
+        width: 204px
+        background: $base-color
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.18)
+        border-radius: 5px
+        bottom: -35px
+        right: 1px
+
+// finish styles for tr with sitemaps
+
+// start styles for first row in the table
+
+table tr.sidemap-row_headrow
+  background: #F6F8FE
+  border-bottom: none
+  height: 50px
+  color: #34495D
+
+  .sitemap-row_remove
+    padding-right: 13px
+    
+  .headrow-recrawl
+    width: 65px
+    text-align: center
+
+  .headrow-remove
+    width: 60px
+    text-align: center
+
+// finish styles for first row in the table
+
+// start styles for loading and error container
+.loading,
+.error-container
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100px
+
+// finish styles for loading and error container
+
+.error-container
+  .button-reload
+    @include small-font
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 70px
+    height: 30px
+    border-radius: 5px
+    cursor: pointer
+    background: $blue-color
+    color: #fff
+  

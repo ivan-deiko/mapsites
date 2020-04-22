@@ -1,0 +1,36 @@
+// style for header
+  
+.sitemaps-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: 22px 31px 20px 24px
+  
+  .table-name
+    @include large-font
+    display: flex
+    align-items: center
+    font-weight: bold
+    p 
+      margin-right: 9px
+    svg 
+      margin-top: 3px 
+
+  .sitemaps-header_controller
+    @include medium-font
+    display: flex
+    list-style-type: none
+
+    .selected-count
+      color: #34495D
+      letter-spacing: 0.01em
+
+    .recrawl-button
+      cursor: pointer
+      color: $blue-color
+      margin: 0 26px 0 29px
+
+    .remove-button
+      cursor: pointer
+      color: $orange-color  
